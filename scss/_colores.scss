@@ -1,0 +1,14 @@
+$bg-color: #b0c4bd;
+$font-color: #ffffff;
+
+.header__logo{
+    background-color: $bg-color;
+}
+
+.header__menu--color{
+    color: $font-color;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: $font-color;
+}
