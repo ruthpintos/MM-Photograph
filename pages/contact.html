@@ -74,7 +74,35 @@
     </header>
 
     <main>
-        
+        <form action="" method="post">
+            <fieldset class="fieldsetContacto"> <strong>Contact me</strong>
+                <p>
+                <label for="nombre" id="nombre" name="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email" id="email" name="email">E-mail*</label>
+                <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="" id="tipoTrabajo" name="tipoTrabajo"> <span>Tipo de trabajo que te interesa</span> </label>
+                    <select name="typeWork" id="typeWork">
+                        <option value="wedding">Wedding</option>
+                        <option value="couples">Couples</option>
+                        <option value="kids">Kids</option>
+                        <option value="product">Product</option>
+                    </select>
+
+                    <label for="" id="findMe" name="findMe"><span>Cómo me encontraste</span></label>
+                    <select name="encontraMe" id="encontraMe">
+                        <option value="instagram">Instagram</option>
+                        <option value="recomendacion">Recomendación</option>
+                    </select>
+                </p>
+                <textarea name="mensaje" id="mensaje" cols="65" rows="10">Mensaje</textarea>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </fieldset>
+        </form>
     </main>
 
     <footer>
