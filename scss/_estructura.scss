@@ -1,0 +1,51 @@
+//index
+
+    //carousel
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    //sección principal
+
+.seccion{
+    display: flex;
+
+    .seccion__imagen .seccion__texto{
+        flex-direction: row;
+    }
+}
+
+    //galería
+
+.indexgallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+
+        .indexgallery__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}
+
+//wedding - couples - kids - product
+
+    //galeria
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+
+        .gallery__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}
