@@ -1,5 +1,14 @@
 //index
 
+section{
+    margin: 50px;
+}
+
+    //header
+header{
+    margin-bottom: 50px;
+}
+
     //carousel
 
 .container{
@@ -10,12 +19,21 @@
 
     //sección principal
 
-.seccion{
-    display: flex;
+.mainseccion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        .mainseccion__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .seccion__imagen .seccion__texto{
-        flex-direction: row;
-    }
+        .mainseccion__texto{
+            h3{
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
 }
 
     //galería
@@ -48,4 +66,25 @@
             height: 100%;
             object-fit: cover;
         }
+}
+
+//footer
+
+footer{
+    text-align: center;
+    padding: 10px;
+
+        h4{
+            color: gray;
+        }
+}
+
+nav{
+    ul{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
 }
