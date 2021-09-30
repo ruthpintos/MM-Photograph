@@ -17,7 +17,24 @@ header{
     align-items: center;
 }
 
-    //sección principal
+    //galería
+
+.indexgallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+
+        .indexgallery__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}
+
+//index - about
+
+ //sección principal
 
 .mainseccion{
     display: grid;
@@ -33,21 +50,6 @@ header{
                 font-size: 20px;
                 text-align: justify;
             }
-        }
-}
-
-    //galería
-
-.indexgallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
-    grid-gap: 10px;
-
-        .indexgallery__img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
 }
 
