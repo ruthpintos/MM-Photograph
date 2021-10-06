@@ -1,6 +1,8 @@
 $bg-color: #b0c4bd;
 $font-color: #ffffff;
 
+//header
+
 .header__logo{
     background-color: $bg-color;
 }
@@ -12,6 +14,14 @@ $font-color: #ffffff;
 .navbar-light .navbar-nav .nav-link{
     color: $font-color;
 }
+
+// contacto
+
+input[type="submit" i]{
+    background: $font-color;
+}
+
+// footer
 
 footer{
     background-color: $bg-color;

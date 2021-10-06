@@ -7,6 +7,9 @@
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff; }
 
+input[type="submit" i] {
+  background: #ffffff; }
+
 footer {
   background-color: #b0c4bd; }
 

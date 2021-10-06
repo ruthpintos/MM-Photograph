@@ -95,7 +95,11 @@
     </header>
 
     <main>
-        <form action="" method="post">
+        <div>
+            <img src="../img/1.png" alt="">
+        </div>
+
+        <form action="" method="post" class="container">
             <fieldset class="fieldsetContacto"> <strong>Contact me</strong>
                 <p>
                     <label for="nombre" id="nombre" name="nombre">Nombre*</label>
@@ -112,15 +116,16 @@
                         <option value="kids">Kids</option>
                         <option value="product">Product</option>
                     </select>
-
+                </p>
+                <p>
                     <label for="" id="findMe" name="findMe"><span>Cómo me encontraste</span></label>
                     <select name="encontraMe" id="encontraMe">
                         <option value="instagram">Instagram</option>
                         <option value="recomendacion">Recomendación</option>
                     </select>
                 </p>
-                <textarea name="mensaje" id="mensaje" cols="65" rows="10">Mensaje</textarea>
-                <p>
+                <textarea name="mensaje" id="mensaje" cols="60" rows="5">Mensaje</textarea>
+                <p class="container submit">
                     <input type="submit" value="Submit">
                 </p>
             </fieldset>
