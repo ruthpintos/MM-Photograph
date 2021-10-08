@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 //index//////////////////////////////////////
 
 section{
@@ -95,3 +100,68 @@ nav{
 }
 
 //contact////////////////
+
+
+// Responsive ////////////////////////
+
+// Index - About
+
+@media only screen and (min-width: 320px){
+    .mainseccion{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+}
+}
+
+@media only screen and (min-width: 1200px){
+    .mainseccion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Galería
+
+@media only screen and (min-width: 320px){
+    .indexgallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .indexgallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Wedding - couples - kids - product
+
+@media only screen and (min-width: 320px){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        div{
+            h3{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container{
+        div{
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
+}
