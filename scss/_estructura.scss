@@ -11,6 +11,10 @@ header{
     margin-bottom: 50px;
 }
 
+.navbar-collapse{
+    flex-grow: 0;
+}
+
     //carousel
 
 .container{
@@ -26,6 +30,7 @@ header{
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
     grid-gap: 10px;
+    
 
         .indexgallery__img{
             width: 100%;
@@ -106,45 +111,46 @@ nav{
 
 // Responsive ////////////////////////
 
-// Index - About
-
 @media only screen and (min-width: 320px){
     .mainseccion{
+        margin: 50px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 }
+    .mainseccion__imagen{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
 }
-
-@media only screen and (min-width: 768px){
-    .mainseccion{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .mainseccion__imagen--elemento{
+        width: 80%;
+        height: 380px;
     }
-}
 
-// Galería
-
-@media only screen and (min-width: 320px){
     .indexgallery{
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .indexgallery{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 // Wedding - couples - kids - product
 
-@media only screen and (min-width: 320px){
+// Foto principal
+
+    .pages{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+}
+    .pages__fotoPrincipal{
+        width: 100%;
+}
+
+
     .gallery{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }
+}
     .container{
         div{
             h3{
@@ -154,7 +160,46 @@ nav{
     }
 }
 
+////////////////////////////////////////////
+
+@media only screen and (min-width: 480px){
+    .mainseccion{
+        margin-top: 50px;
+}
+    .mainseccion__imagen--elemento{
+        width: 80%;
+        height: 520px;
+}
+}
+
+///////////////////////////////////////////
+
+@media only screen and (min-width: 600px){
+    .mainseccion{
+        margin-top: 50px;
+}
+    .mainseccion__imagen--elemento{
+        width: 80%;
+        height: 640px;
+}
+}
+
+///////////////////////////////////////////
+
 @media only screen and (min-width: 768px){
+    .mainseccion{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mainseccion__imagen--elemento{
+        width: 80%;
+        height: 740px;
+    }
+    .indexgallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .gallery{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -165,5 +210,19 @@ nav{
                 font-size: 30px;
             }
         }
+    }
+}
+
+///////////////////////////////////////////
+
+@media only screen and (min-width: 1024px){
+    .mainseccion{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mainseccion__imagen--elemento{
+        width: 80%;
+        height: 100%;
     }
 }

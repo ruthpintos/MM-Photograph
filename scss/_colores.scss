@@ -15,14 +15,23 @@ $font-color: #ffffff;
     color: $font-color;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $font-color;
+}
+
 // contacto
 
 input[type="submit" i]{
     background: $font-color;
+    padding: 5px;
 }
 
 // footer
 
 footer{
     background-color: $bg-color;
+        a{
+            text-decoration: none;
+            color: $font-color;
+        }
 }

@@ -7,11 +7,18 @@
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff; }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: #ffffff; }
+
 input[type="submit" i] {
-  background: #ffffff; }
+  background: #ffffff;
+  padding: 5px; }
 
 footer {
   background-color: #b0c4bd; }
+  footer a {
+    text-decoration: none;
+    color: #ffffff; }
 
 .body__fuente {
   font-family: "Raleway", sans-serif;
@@ -33,6 +40,9 @@ footer {
 header {
   width: 100%;
   margin-bottom: 50px; }
+
+.navbar-collapse {
+  flex-grow: 0; }
 
 .container {
   display: flex;
@@ -88,34 +98,68 @@ nav ul {
 
 @media only screen and (min-width: 320px) {
   .mainseccion {
+    margin: 50px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr); } }
-
-@media only screen and (min-width: 768px) {
-  .mainseccion {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media only screen and (min-width: 320px) {
+    grid-template-columns: repeat(1, 1fr); }
+  .mainseccion__imagen {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center; }
+  .mainseccion__imagen--elemento {
+    width: 80%;
+    height: 380px; }
   .indexgallery {
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr); } }
-
-@media only screen and (min-width: 768px) {
-  .indexgallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media only screen and (min-width: 320px) {
+    grid-template-columns: repeat(1, 1fr); }
+  .pages {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+  .pages__fotoPrincipal {
+    width: 100%; }
   .gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
   .container div h3 {
     font-size: 20px; } }
 
+@media only screen and (min-width: 480px) {
+  .mainseccion {
+    margin-top: 50px; }
+  .mainseccion__imagen--elemento {
+    width: 80%;
+    height: 520px; } }
+
+@media only screen and (min-width: 600px) {
+  .mainseccion {
+    margin-top: 50px; }
+  .mainseccion__imagen--elemento {
+    width: 80%;
+    height: 640px; } }
+
 @media only screen and (min-width: 768px) {
+  .mainseccion {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .mainseccion__imagen--elemento {
+    width: 80%;
+    height: 740px; }
+  .indexgallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
   .container div h3 {
     font-size: 30px; } }
+
+@media only screen and (min-width: 1024px) {
+  .mainseccion {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .mainseccion__imagen--elemento {
+    width: 80%;
+    height: 100%; } }
